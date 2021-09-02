@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixCut-8月裂变活动</title>
+    <link rel="stylesheet" href="https://neveragain.allstatics.com/2019/assets/style/bootstrap-wondershare.min.css" />
+    <style>
+        .by-img {
+            margin-left: -7rem;
+            margin-top: -10rem;
+        }
+        
+        .how-img {
+            margin-top: -3rem;
+            margin-left: 6rem;
+        }
+        
+        .ml-14 {
+            padding-left: 0.875rem;
+        }
+        
+        .px-32 {
+            padding: 1.3125rem 1.875rem;
+        }
+        
+        .px-203 {
+            padding: 1.3125rem 3.375rem;
+        }
+        
+        .how-img-1 {
+            bottom: 0;
+            left: 0;
+        }
+        
+        .how-img-2 {
+            top: 0;
+            right: 0;
+        }
+        
+        .time-img {
+            bottom: 0;
+            right: 0;
+        }
+        
+        .terms-img {
+            top: -7rem;
+            left: -6rem;
+        }
+        
+        .pix-1-img {
+            bottom: -3rem;
+            left: 0;
+        }
+        
+        .pix-2-img {
+            bottom: -3rem;
+            right: 0;
+            z-index: 1;
+        }
+        /**/
+        
+        .time-border::before {
+            content: "";
+            width: 320px;
+            border-top: 1px dashed rgba(35, 35, 65, 0.3);
+            display: inline-block;
+            margin-left: -16rem;
+            margin-top: 2rem;
+            position: absolute;
+        }
+        /*进度条*/
+        
+        .grow-1-img {
+            margin-left: 8rem;
+        }
+        
+        .grow-2-img {
+            margin-left: 8rem;
+        }
+        
+        .grow-3-img {
+            margin-left: 11rem;
+        }
+        
+        .grow-4-img {
+            margin-left: 8.5rem;
+        }
+        /**/
+        
+        .grow-1-text {
+            margin-left: 8.5rem;
+        }
+        
+        .grow-2-text {
+            margin-left: 9rem;
+        }
+        
+        .grow-3-text {
+            margin-left: 11.5rem;
+        }
+        
+        .grow-4-text {
+            margin-left: 7.5rem;
+        }
+        
+        @media(max-width:1680px) {
+            .pix-1-img {
+                width: 60%;
+            }
+            .pix-2-img {
+                width: 16%;
+            }
+            .come-img {
+                width: 100%;
+            }
+        }
+        
+        @media(max-width:1440px) {
+            .time-border::before {
+                margin-left: -13rem;
+                margin-top: 2rem;
+                width: 260px;
+            }
+            .grow-1-img {
+                margin-left: 5.5rem;
+            }
+            .grow-4-img {
+                margin-left: 6.4rem;
+            }
+            .grow-1-text {
+                margin-left: 6rem;
+            }
+            .grow-4-text {
+                margin-left: 5.5rem;
+            }
+            .grow-bar {
+                width: 96% !important;
+            }
+        }
+        
+        @media(max-width:1280px) {
+            .by-img {
+                width: 30%;
+                margin-left: -3rem;
+                margin-top: -7rem;
+            }
+        }
+        
+        @media(max-width:1024px) {
+            .pix-1-img {
+                width: 80%;
+            }
+            .pix-2-img {
+                width: 22%;
+            }
+            .time-border::before {
+                display: none;
+            }
+            .remove-img {
+                width: 100%;
+            }
+            .by-img {
+                width: 40%;
+                margin-left: -3rem;
+                margin-top: -7rem;
+            }
+            .grow-1-img {
+                margin-left: 10.5rem;
+            }
+            .grow-2-img {
+                margin-left: 8rem;
+            }
+            .grow-3-img {
+                margin-left: 11rem;
+            }
+            .grow-4-img {
+                margin-left: 6.5rem;
+            }
+            /**/
+            .grow-1-text {
+                margin-left: 11rem;
+            }
+            .grow-2-text {
+                margin-left: 9rem;
+            }
+            .grow-3-text {
+                margin-left: 11.5rem;
+            }
+            .grow-4-text {
+                margin-left: 6.5rem;
+            }
+            .grow-bar {
+                width: 92% !important;
+            }
+        }
+        
+        @media(max-width:770px) {
+            .time-img {
+                width: 20%;
+            }
+            .terms-img {
+                width: 35%;
+            }
+            .come-3-img {
+                width: 95%;
+            }
+            .how-img-2 {
+                width: 20%;
+            }
+            .how-img {
+                position: absolute;
+                margin-top: -4rem;
+                margin-left: 11rem;
+            }
+            .invite-text {
+                line-height: 1.5625rem !important;
+            }
+            .grow-1-img {
+                margin-left: 5.5rem;
+            }
+            .grow-4-img {
+                margin-left: 8rem;
+            }
+            .grow-2-text {
+                margin-left: 10.5rem;
+            }
+            .grow-3-text {
+                margin-left: 12rem;
+            }
+            .grow-1-text {
+                margin-left: 6rem;
+            }
+            .grow-4-text {
+                margin-left: 9rem;
+            }
+            .grow-bar {
+                width: 96% !important;
+            }
+        }
+        
+        @media(max-width:380px) {
+            .how-img-1 {
+                width: 70%;
+            }
+            .how-img-2 {
+                width: 20%;
+            }
+            .terms-img {
+                display: none;
+            }
+            .pix-1-img {
+                width: 70%;
+            }
+            .pix-2-img {
+                width: 30%;
+            }
+            .by-img {
+                width: 30%;
+                margin-left: -1.8rem;
+                margin-top: -6rem;
+            }
+            .how-img {
+                width: 20%;
+                margin-top: -3rem;
+                margin-left: 18rem;
+                position: absolute;
+            }
+            .section-1 {
+                background-image: url(./imgs/iPhone-1.png) !important;
+                background-position: 0% 0% !important;
+                padding-bottom: 31.25rem;
+            }
+            .grow-1-img,
+            .grow-2-img,
+            .grow-3-img,
+            .grow-4-img {
+                width: 10%;
+            }
+            .grow-1-img {
+                margin-left: 4rem;
+            }
+            .grow-2-img {
+                margin-left: 4rem;
+            }
+            .grow-3-img {
+                margin-left: 4rem;
+            }
+            .grow-4-img {
+                margin-left: 3rem;
+            }
+            /**/
+            .grow-1-text {
+                margin-left: 3.5rem;
+            }
+            .grow-2-text {
+                margin-left: 4.5rem;
+            }
+            .grow-3-text {
+                margin-left: 4rem;
+            }
+            .grow-4-text {
+                margin-left: 1.6rem;
+            }
+            .font-size-14 {
+                font-size: 0.875rem;
+            }
+            .grow-bar {
+                height: 0.625rem !important;
+            }
+            .display-3 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wsc-main px-0" style="overflow: visible;">
+        <section style="font-family: Inter;background-image: url(./imgs/Frame.png);background-repeat: no-repeat;background-position: center;" class="section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mt-4 pt-5 mb-md-5">
+                        <img src="./imgs/Come-1.png" alt="" class="come-img d-xl-block d-none mt-2">
+                        <img src="./imgs/come-2.png" alt="" class="d-md-none d-block">
+                        <img src="./imgs/come-3.png" alt="" class="d-md-block d-none  d-xl-none come-3-img">
+                        <h2 class="font-weight-medium font-size-huge pt-4 text-center text-md-left invite-text" style="color: #FFFFFF;line-height: 39px;">Invite friends to explore the unknown world together and<br class="d-xxl-block d-none"> WIN up to<b>$1000!</b> </h2>
+                        <div class="mt-3 d-flex justify-content-center justify-content-md-start"> <a href="#" style="background: #FFFFFF; border-radius: 64px;text-decoration: none; color: #4A47FF;font-family: Messina Sans;" class="px-32  font-size-large font-weight-bold">How to enter</a></div>
+                        <div class="d-flex justify-content-md-start justify-content-center mt-2">
+                            <h2 class="font-size-normal font-weight-normal mt-4" style="color: #FFFFFF;">How to Win >></h2>
+                            <img src="./imgs/image.png" alt="" class="how-img">
+                        </div>
+                        <h2 class="font-size-normal  font-weight-medium text-md-left text-center" style="color: #FFFFFF;">Event runs untiil 2021.9.30</h2>
+                        <div class="d-flex justify-content-center justify-content-md-start">
+                            <div class="mt-4 mb-3  pl-5" style="background-image: url(./imgs/Group-1.png);background-repeat: no-repeat;width: 17.375rem; height: 4.6875rem;">
+                                <h3 class="font-size-normal font-weight-bold text-center pt-2" style="color: #FFFFFF;">Share on:</h3>
+                                <div class="d-flex justify-content-center">
+                                    <a href="" class="ml-14"><img src="./imgs/path.svg" alt=""></a>
+                                    <a href="" class="ml-14"><img src="./imgs/path-2.svg" alt=""></a>
+                                    <a href="" class="ml-14"><img src="./imgs/path-3.svg" alt=""></a>
+                                    <a href="" class="ml-14"><img src="./imgs/path-4.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section style="font-family: Inter;" class="mt-md-5 pt-md-5  pb-md-0 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class=" mb-4 pb-2 d-md-none d-block">
+                        <h2 class="font-size-super  font-weight-normal mt-5 text-center">Come to the unknown world </h2>
+                        <h2 class="display-4 font-weight-bold pt-md-4 mt-2 text-center">by uploading your image here!</h2>
+                        <div class="mt-4 d-flex justify-content-center"> <a href="#" style="background:  #4A47FF; border-radius: 64px;text-decoration: none; color: #FFFFFF;font-family: Messina Sans;" class="px-32  font-size-large font-weight-bold">Upload Image</a></div>
+                    </div>
+                    <div class="col-md-6 " style="">
+                        <img src="./imgs/Rectangle-1.png" alt="" class="img-fluid">
+                        <img src="./imgs/Group-2.png" alt="" class=" by-img">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ml-md-5 pl-md-4">
+                            <div class="d-md-block d-none ">
+                                <h2 class="font-size-super  font-weight-normal mt-xl-5 pt-xl-5">Come to the unknown world </h2>
+                                <h2 class="display-4 font-weight-bold  ">by uploading your image here!</h2>
+                            </div>
+                            <h2 class="font-size-super font-weight-normal mt-xl-5  mt-4" style="color: #494949">Choose a template</h2>
+                            <div class="row d-flex justify-content-center mt-3">
+                                <div class="col-3">
+                                    <div style="border: 4px solid #4A47FF; border-radius: 6px;">
+                                        <img src="./imgs/Rectangle-2.png" alt="" class="img-fluid">
+                                    </div>
+
+                                </div>
+                                <div class="col-3">
+                                    <div style=""> <img src="./imgs/Rectangle-2.png" alt="" class="img-fluid"></div>
+                                </div>
+                                <div class="col-3">
+                                    <div style=""> <img src="./imgs/Rectangle-2.png" alt="" class="img-fluid"></div>
+                                </div>
+                                <div class="col-3">
+                                    <div style=""> <img src="./imgs/Rectangle-2.png" alt="" class="img-fluid"></div>
+                                </div>
+                            </div>
+                            <div class="d-md-block d-none">
+                                <div class="mt-5 pt-xl-5 d-flex "> <a href="#" style="background:  #4A47FF; border-radius: 64px;text-decoration: none; color: #FFFFFF;font-family: Messina Sans;" class="px-32 font-size-large font-weight-bold">Upload Image</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="font-family: Inter; background: #EDEDFF" class="mt-5 position-relative pb-5">
+            <img src="./imgs/image-1.png" alt="" class="position-absolute how-img-1">
+            <img src="./imgs/image-2.png" alt="" class="position-absolute how-img-2">
+            <div class="container pt-5">
+                <h2 class="text-center display-4 font-weight-bold py-md-5  mb-4" style="color: #232341">How to Participate</h2>
+                <div class="row mb-md-5">
+                    <div class="col-xl-3 col-md-6">
+                        <div style="background: #FFFFFF;border-radius: 6px" class="h-100">
+                            <img src="./imgs/Frame-3.png" alt="" class="img-fluid" width="100%">
+                            <h2 class="font-size-super   font-weight-bold pl-4 pt-4" style="color:  #4A47FF;">Step 1</h2>
+                            <p class="pl-4 pr-5 pt-4" style="color: #494949"><a href="#" style="color: #4A47FF;text-decoration: none;" class="font-weight-bold">Upload </a>your favorite photo and pick your favorite unknow world template.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mt-4 mt-md-0">
+                        <div style="background: #FFFFFF;border-radius: 6px" class="h-100">
+                            <img src="./imgs/Frame-4.png" alt="" class="img-fluid" width="100%">
+                            <h2 class="font-size-super   font-weight-bold pl-4 pt-4" style="color:  #4A47FF;">Step 1</h2>
+                            <p class="pl-4 pr-4 pt-4" style="color: #494949">
+                                share to your social media or email with your exclusive invite link </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mt-4 mt-xl-0">
+                        <div style="background: #FFFFFF;border-radius: 6px" class="h-100">
+                            <div style="background: #3F3DA9;" class="text-center"> <img src="./imgs/Frame-8.png" alt="" class="img-fluid" style=""></div>
+                            <h2 class="font-size-super   font-weight-bold pl-4 pt-5" style="color:  #4A47FF;">Step 1</h2>
+                            <p class="pl-4 pr-5 pt-4" style="color: #494949">
+                                Invite family and friends to sign up and Come to UnKnown<br>
+                                <a href="#" style="color: #4A47FF;text-decoration: none;" class="font-weight-bold"> Get your invite link here>></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mt-4 mt-xl-0">
+                        <div style="background: #FFFFFF;border-radius: 6px" class="h-100">
+                            <div style="background: #3F3DA9;" class="text-center"> <img src="./imgs/Frame-9.png" alt="" class="img-fluid"></div>
+                            <h2 class="font-size-super   font-weight-bold pl-4 pt-5" style="color:  #4A47FF;">Step 1</h2>
+                            <p class="pl-4 pr-5 pt-4 pb-3" style="color: #494949">
+                                Grow the prize pool Most total invited users, the higher amount for the brand prize<br>
+                                <a href="#" style="color: #4A47FF;text-decoration: none;" class="font-weight-bold"> Up to $1000!</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 pt-5 pb-4" style="font-family: Inter;">
+            <div class="container mt-xl-5 pt-xl-4">
+                <div class="row">
+                    <div class="col-xl-8 grow-bar-2" style="">
+                        <h2 class="text-center display-3 font-weight-bold pt-xl-5" style="color: #232341">Grow the Prize Pool</h2>
+                        <div class="font-size-large d-flex justify-content-center mt-4" style="">
+                            <div class="py-2 pl-md-4" style="border-top: 1px solid #5861FF;border-bottom: 1px solid #5861FF;vertical-align: middle;"><img src="./imgs/icon-1.png" alt=""> <span class="pl-2" style="vertical-align: middle;">Current Prize: XXX</span></div>
+                            <div class="pl-md-5 pl-3 pr-md-4 py-2" style="border-top: 1px solid #5861FF;border-bottom: 1px solid #5861FF; vertical-align: middle;"><img src="./imgs/icon-2.png" alt=""> <span class="pl-2" style="vertical-align: middle;">Next level  Prize: XXX</span></div>
+                        </div>
+                        <div class="mt-5 pt-md-5 text-center text-xl-left">
+                            <div class="">
+                                <img src="./imgs/grow-1.png" alt="" class="grow-1-img">
+                                <img src="./imgs/grow-2.png" alt="" class="grow-2-img">
+                                <img src="./imgs/grow-3.png" alt="" class="grow-3-img">
+                                <img src="./imgs/grow-4.png" alt="" class="grow-4-img">
+                            </div>
+                            <!--  <img src="./imgs/grow-6.png" alt="" class="mt-4 img-fluid"> -->
+                            <div class="mt-4 grow-bar" style="background: linear-gradient(0deg, #DEE1E2 21.67%, #D2D2D2 97.64%);border-radius: 1.375rem;width: 88%; height: 1.25rem;">
+                                <div class="grow-bar-1" style="background: linear-gradient(90deg, #5861FF 0%, #7AFAE1 100%); border-radius: 22px;"></div>
+                            </div>
+                            <div class="font-size-large font-size-14  font-weight-bold mt-4">
+                                <span class="grow-1-text">100人</span>
+                                <span class="grow-2-text">500人</span>
+                                <span class="grow-3-text">5000人</span>
+                                <span class="grow-4-text">10000人</span>
+                            </div>
+                        </div>
+                        <div class="font-size-small text-xl-left text-center pt-xl-5 mt-3" style="color: #727272;vertical-align: middle;"><img src="./imgs/icon-3.png" alt=""> <span style="vertical-align: middle;">Get your work done on the go with tools to read, edit, annotate, fill, sign, and share PDFs.</span></div>
+                    </div>
+                    <div class="col-xl-4 mt-4 mt-xl-0 d-flex justify-content-center justify-content-xl-start">
+                        <div style="background-image: url(./imgs/Rectangle.png);background-repeat: no-repeat;background-size: 100% 100%;">
+                            <div class="pt-5 mt-5 px-4 d-flex">
+                                <div class="pl-2">
+                                    <h2 class="font-size-large font-weight-bold text-center ">TOP 5 List </h2>
+                                    <ul style="list-style: none;" class="font-size-large pl-0 pt-4">
+                                        <li style="background-color: rgba(224, 227, 255, 0.5);border-radius: 33px; " class="py-2 pl-4 pr-md-5 pr-4 mt-2"> 1.email***@gmail.com</li>
+                                        <li style="background-color: rgba(224, 227, 255, 0.5);border-radius: 33px; " class="py-2 pl-4  mt-4"> 1.email***@gmail.com</li>
+                                        <li style="background-color: rgba(224, 227, 255, 0.5);border-radius: 33px; " class="py-2 pl-4  mt-4"> 1.email***@gmail.com</li>
+
+                                        <li style="background-color: rgba(224, 227, 255, 0.5);border-radius: 33px; " class="py-2 pl-4  mt-4"> 1.email***@gmail.com</li>
+
+                                        <li style="background-color: rgba(224, 227, 255, 0.5);border-radius: 33px; " class="py-2 pl-4  mt-4"> 1.email***@gmail.com</li>
+
+
+
+                                    </ul>
+                                </div>
+                                <div class="mr-3 ">
+                                    <h2 class="font-size-large font-weight-bold text-center ">Invited users </h2>
+                                    <ul style="list-style: none;" class="font-size-large pl-0  pt-4 text-center px-4">
+                                        <li style="background: rgba(88, 97, 255, 0.3);;border-radius: 6px; " class=" mt-2 py-2 px-4 "> 64</li>
+                                        <li style="background: rgba(88, 97, 255, 0.3);;border-radius: 6px; " class="mt-4 py-2"> 32</li>
+                                        <li style="background: rgba(88, 97, 255, 0.3);border-radius: 6px; " class=" mt-4 py-2"> 23</li>
+
+                                        <li style="background: rgba(88, 97, 255, 0.3);border-radius: 6px; " class=" mt-4 py-2">1</li>
+
+                                        <li style="background: rgba(88, 97, 255, 0.3);border-radius: 6px; " class=" mt-4 py-2">12</li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="font-family: Inter;" class="mt-5">
+
+            <div class="container mt-md-5 pt-md-5 pb-md-5  position-relative" style="background: #EDEDFF; border-radius: 10px;">
+                <img src="./imgs/image-3.png" alt="" class="position-absolute time-img">
+                <h2 class="text-center  font-weight-bold display-4 pt-5" style="color: #232341;">Timeline</h2>
+                <div class="row pt-4 d-flex justify-content-md-between  px-xl-5 mx-lg-2">
+                    <div class="col-md-3  ">
+                        <div class="text-center ">
+                            <img src="./imgs/time-1.png" alt="" class="">
+                            <h2 class="font-size-super font-weight-bold pt-md-4 pt-2 text-uppercase" style="color: #5861FF;">Create&Share</h2>
+                            <h2 class="font-size-large font-weight-bold  pt-2">Start from now on</h2>
+                            <p style="color: #454545; " class="font-size-small pt-md-3 pt-2 ">Create your Best Dad Ever photo nominate by PixCut
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 time-border pt-4 pt-md-0">
+                        <div class="text-center">
+                            <img src="./imgs/time-2.png" alt="">
+                            <h2 class="font-size-super font-weight-bold pt-md-4 pt-2 text-uppercase" style="color: #5861FF;">invite</h2>
+                            <h2 class="font-size-large font-weight-bold  pt-2">9.1 to 9.30</h2>
+                            <p style="color: #454545; " class="font-size-small pt-md-3 pt-2">Share your amazing image to your Social Media with your exclusive invite link
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pb-3 time-border pt-4 pt-md-0">
+                        <div class="text-center">
+                            <img src="./imgs/time-3.png" alt="">
+                            <h2 class="font-size-super font-weight-bold pt-md-4 pt-2 text-uppercase" style="color: #5861FF;">Win</h2>
+                            <h2 class="font-size-large font-weight-bold  pt-2">10.10</h2>
+                            <p style="color: #454545; " class="font-size-small pt-md-3  pt-2">The most exciting moment to reveal the BEST DAD EVER awards! Invited Friends(60%)+Social Media(40%)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 d-flex justify-content-center pb-5 mb-4"> <a href="#" style="background:  #4A47FF; border-radius: 64px;text-decoration: none; color: #FFFFFF;font-family: Messina Sans;" class="px-203 font-size-large font-weight-bold">Enter Now</a> </div>
+            </div>
+        </section>
+        <section style="font-family: Inter;" class="mt-3 mb-5 pb-md-5 position-relative">
+            <img src="./imgs/pix-1.png" alt="" class="position-absolute pix-1-img">
+            <img src="./imgs/pix-2.png" alt="" class="position-absolute pix-2-img">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-xxl-5 col-md-7">
+                        <img src="./imgs/remove.png" alt="" class="remove-img">
+                    </div>
+                    <div class="col-md-4  mt-lg-5  ml-md-5 pl-xl-5 pt-xl-4">
+
+                        <h2 class="display-4 font-weight-bold  pt-4 text-md-left text-center" style="color: #232341;">
+                            Remove Image Background <span style="color: #5861FF; ">for free</span>
+                        </h2>
+                        <div class=" d-flex  mt-xl-5 mt-4 justify-content-center justify-content-md-start"> <a href="#" style="background:  #4A47FF; border-radius: 64px;text-decoration: none; color: #FFFFFF;font-family: Messina Sans;" class="px-32 py-3 font-size-large font-weight-bold">Try Now</a> </div>
+                    </div>
+                </div>
+                <div class="row pt-5 px-5 mt-5 pb-5 position-relative" style="background: #EDEDFF;border-radius: 10px;">
+                    <img src="./imgs/image-4.png" alt="" class="position-absolute terms-img">
+                    <div class="pt-md-3 px-md-5" style="color: #494949;">
+                        <h2 class="font-size-huge font-weight-semi-bold " style="color: #000000;">Terms and Conditions</h2>
+                        <p class="pr-md-5 pt-4">1.Send your invitation to ask more family and friends to sign up. The more people you encourage people to share the love for their dad with Pixcut, the more possible you are to win!</p>
+
+                        <p class="pr-md-5">2.Send your invitation to ask more family and friends to sign up. The more people you encourage people t o share the love for their dad with Pixcut, the more possible you are to win!</p>
+                        <p class="pr-md-5">3.Send your invitation to ask more family and friends to sign up.</p>
+
+                        <div class=" d-flex  mt-4"> <a href="#" style="background:  #4A47FF; border-radius: 64px;text-decoration: none; color: #FFFFFF;font-family: Messina Sans;" class="px-5 py-3 font-size-large font-weight-bold">Enter Now</a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://neveragain.allstatics.com/2019/assets/vendor/wsc-vendor.js"></script>
+<script src="https://neveragain.allstatics.com/2019/assets/script/wsc-override-ws.js"></script>
+<script src="https://neveragain.allstatics.com/2019/assets/script/wsc-common.js"></script>
+<script>
+    $(function() {
+        wsc.common.init()
+    })
+</script>
+<script>
+    //点击进度条事件
+    var grows = document.querySelector(".grow-bar");
+    var grow = document.querySelector(".grow-bar-1");
+    grows.onclick = function() {
+        var grow2 = document.querySelector(".grow-bar-2").offsetLeft;
+        var left = grow2 + 13;
+        var e = event || window.event;
+        var x = e.clientX;
+        var growswidth = grows.clientWidth;
+        var lefts = (x - left) / growswidth;
+        grow.style.height = "100%";
+        grow.style.width = lefts * 100 + "%";
+    }
+</script>
+
+</html>
